@@ -32,6 +32,7 @@ codefmt` if codefmt is installed (and helptags have been generated).
 *   Kotlin ([ktfmt](https://github.com/facebookincubator/ktfmt))
 *   Lua
     ([FormatterFiveOne](https://luarocks.org/modules/ElPiloto/formatterfiveone)
+    or [lcf](https://github.com/martin-eden/lua_code_formatter))
 *   Markdown (prettier)
 *   Nix (nixpkgs-fmt)
 *   OCaml ([ocamlformat](https://github.com/ocaml-ppx/ocamlformat))
@@ -111,6 +112,7 @@ augroup autoformat_settings
   autocmd FileType julia AutoFormatBuffer JuliaFormatter
   autocmd FileType kotlin AutoFormatBuffer ktfmt
   autocmd FileType lua AutoFormatBuffer luaformatterfiveone
+  " Alternative for lua != 5.1: autocmd FileType lua AutoFormatBuffer lcf
   autocmd FileType markdown AutoFormatBuffer prettier
   autocmd FileType ocaml AutoFormatBuffer ocamlformat
   autocmd FileType python AutoFormatBuffer yapf

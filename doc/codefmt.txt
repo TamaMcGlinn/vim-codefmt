@@ -47,7 +47,7 @@ The current list of defaults by filetype is:
   * json, jsonnet: jsonnetfmt
   * julia: JuliaFormatter
   * kotlin: ktfmt
-  * lua: luaformatterfiveone
+  * lua: luaformatterfiveone, lcf
   * nix: nixpkgs-fmt
   * ocaml: ocamlformat
   * python: autopep8, black, yapf
@@ -235,6 +235,10 @@ Default: 'nixpkgs-fmt' `
                                       *codefmt:luaformatterfiveone_executable*
 The path to the luaformatterfiveone executable.
 Default: 'luaformatterfiveone' `
+
+                                      *codefmt:lcf_executable*
+The path to the lcf executable.
+Default: 'lua.reformat' `
 
                                                  *codefmt:cljstyle_executable*
 The path to the cljstyle executable.

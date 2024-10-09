@@ -248,6 +248,10 @@ call s:plugin.Flag('nixpkgs_fmt_executable', 'nixpkgs-fmt')
 call s:plugin.Flag('luaformatterfiveone_executable', 'luaformatterfiveone')
 
 ""
+" The path to the lcf executable.
+call s:plugin.Flag('lcf_executable', 'lua.reformat')
+
+""
 " The path to the cljstyle executable.
 call s:plugin.Flag('cljstyle_executable', 'cljstyle')
 
